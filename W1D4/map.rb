@@ -24,7 +24,19 @@ class Map
   end
 
   def show
-     p @map
+    p dd(@map)
+  end
+
+  def dd(arr) # [[1, 2], [3, 4]]
+    sub_arr = []
+    arr.each do | el |
+      if el.is_a?(Array)
+        sub_arr << dd(el)
+      else
+        sub_arr << el
+      end
+    end
+    sub_arr
   end
 end
 
