@@ -30,9 +30,10 @@ class Board
     i = start_pos
     until stones.empty?
       i += 1 % 14
-      if i == 6
+      case i
+      when 6
         @cups[6] << stones.shift if current_player_name == @name1
-      elsif i == 13
+      when 13
         @cups[13] << stones.shift if current_player_name == @name2
       else
         @cups[i] << stones.shift
