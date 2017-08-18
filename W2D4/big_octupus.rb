@@ -23,7 +23,7 @@ def clever(arr)
   largest = arr[0]
   i = 1
   while i < arr.length
-    largest = arr[i] unless arr[i].length < largest.length
+    largest = arr[i] unless arr[i].length < largest.len
     i += 1
   end
   largest
