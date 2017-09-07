@@ -4,9 +4,9 @@
   margin: 0 auto;
   width: 900px;
   background-color: magenta;
-  border-bottom: 1px solid #ccc;
-  border-left: : 1px solid #ccc;
-  border-right: : 1px solid #ccc;
+  border-bottom: 1px solid #magenta;
+  border-left: : 1px solid #magenta;
+  border-right: : 1px solid #magenta;
 }
 
 .footer-copy {
