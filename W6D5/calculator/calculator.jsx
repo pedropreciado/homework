@@ -13,7 +13,7 @@ class Calculator extends React.Component {
     this.setNum2 = this.setNum2.bind(this);
     this.add = this.add.bind(this);
     this.subtract = this.subtract.bind(this);
-    this.multiply = this.multiply.subtract.bind(this);
+    this.multiply = this.multiply.bind(this);
     this.divide = this.divide.bind(this);
   }
 
@@ -33,21 +33,21 @@ class Calculator extends React.Component {
   };
 
   setNum1 (event) {
-    if (e.target.value) {
-      const num1 = e.target.value;
+    if (event.target.value) {
+      const num1 = event.target.value;
     } else {
       const num1 = "";
     }
-    this.setState({num1});
+    this.setState({num1: num1});
   }
 
   setNum2 (event) {
-    if (e.target.value) {
-      const num2 = e.target.value;
+    if (event.target.value) {
+      const num2 = event.target.value;
     } else {
       const num2 = "";
     }
-    this.setState({num2});
+    this.setState({num2: num2});
   }
 
   add (event) {
